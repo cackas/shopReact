@@ -6,7 +6,7 @@ export default class Items extends Component {
     return (
       <main>
         {this.props.items.map(el => (
-            <Item item={el} key={el.id} />
+            <Item addToOrder={this.props.addToOrder} item={el} key={el.id} />
         ))}
       </main>
     )
